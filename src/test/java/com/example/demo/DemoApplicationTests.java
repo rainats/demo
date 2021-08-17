@@ -39,7 +39,7 @@ public class DemoApplicationTests {
 		 String concatName = demoObject.concatName("MM", "RR");
 		 System.out.println("testConcatName_WithSuccess");
 		 
-		 assertEquals("MMRR",concatName);  
+		 assertEquals("MRR",concatName);  
 	    }
 	 
 	 
