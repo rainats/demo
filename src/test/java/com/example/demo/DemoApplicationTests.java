@@ -1,19 +1,17 @@
 package com.example.demo;
 
-import org.junit.jupiter.api.Test;
-//import org.junit.jupiter.api.Assertions;
-import org.springframework.boot.test.context.SpringBootTest;
-
-import static org.junit.Assert.*;
-
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 //import org.junit.Test;
+import org.junit.jupiter.api.Test;
+import org.junit.runner.RunWith;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.junit4.SpringRunner;
 
-
-@SpringBootTest
+@RunWith(SpringRunner.class)
+@SpringBootTest(classes = DemoApplication.class)
 public class DemoApplicationTests {
 	
 
