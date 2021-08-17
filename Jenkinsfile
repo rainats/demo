@@ -18,11 +18,6 @@ pipeline{
                 echo "Running JUnit Tests";
                 bat 'UnitTest.bat'
             }
-            post{
-                always{
-                    junit '**/TEST-*.xml'
-                }
-            }
         }
         stage('Quality-Gate'){
             steps{
