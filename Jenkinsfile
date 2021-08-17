@@ -10,17 +10,17 @@ pipeline{
         stage('Build'){
             steps{
                 echo "building the checked out project";
-                bat '.\mvnw Build.bat'
+                bat 'Build.bat'
             }
         }
         stage('Unit-Test'){
             steps{
                 echo "Running JUnit Tests";
-                bat '.\mvnw UnitTest.bat'
+                bat 'UnitTest.bat'
             }
             post{
                 always{
-                    junit '**/reports/TEST-*.xml'
+                    junit '**/TEST-*.xml'
                 }
             }
         }
