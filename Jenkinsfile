@@ -4,7 +4,7 @@ pipeline{
         stage('Git-Checkout'){
             steps{
                 echo "checking out from git repo";
-                git 'https://github.com/rainats/junit_automation.git'
+                git 'https://github.com/rainats/demo.git'
             }
         }
         stage('Build'){
