@@ -3,7 +3,7 @@ pipeline{
     tools { 
         maven 'maven3.8.1' 
         jdk 'jdk1.8' 
-    }
+          }
     stages{
         stage('Git-Checkout'){
             steps{
