@@ -1,8 +1,8 @@
 pipeline{
     agent any
     tools { 
-        maven 'maven3.8.1' 
-        jdk 'jdk1.8' 
+        maven 'Maven 3.8.1' 
+        jdk 'jdk8' 
           }
     stages{
         stage('Git-Checkout'){
