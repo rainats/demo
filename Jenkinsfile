@@ -31,6 +31,11 @@ pipeline{
                 echo "Running JUnit Tests";
                 bat 'UnitTest.bat'
             }
+            post {
+                always {
+                    junit '**/target/surefire-reports/*.xml'
+                }
+            }
         }
         stage('Quality-Gate'){
             steps{
