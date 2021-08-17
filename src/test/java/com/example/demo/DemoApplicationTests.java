@@ -1,5 +1,7 @@
 package com.example.demo;
 
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotEquals;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
