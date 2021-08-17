@@ -15,13 +15,8 @@ pipeline{
             steps{
                 echo "building the checked out project";
                 bat 'Build.bat'
-                bat 'mvn -Dmaven.test.failure.ignore=true install' 
                 }
-            post {
-                success {
-                    junit 'target/surefire-reports/**/*.xml' 
-                        }
-                }
+ 
         }
         stage('Unit-Test'){
             steps{
