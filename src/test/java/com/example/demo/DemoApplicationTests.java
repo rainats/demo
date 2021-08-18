@@ -37,7 +37,7 @@ public class DemoApplicationTests {
 	    public void testConcatName_WithSuccess() {
 	       
 		 String concatName = demoObject.concatName("MM", "RR");
-		 System.out.println("testConcatName_WithSuccess");
+		 System.out.println("Running testConcatName_WithSuccess");
 		 
 		 assertEquals("MMRR",concatName);  
 	    }
@@ -47,7 +47,7 @@ public class DemoApplicationTests {
 	    public void testConcatName_WithFailure() {
 	       
 		 String concatName = demoObject.concatName("MMM", "RR");
-		 System.out.println("testConcatName_WithFailure");
+		 System.out.println("Running testConcatName_WithFailure");
 		 assertNotEquals("MMRR",concatName);  
 	    }
 	 
@@ -56,7 +56,7 @@ public class DemoApplicationTests {
 	  public void testAddNum_WithSuccess() {
 
 		 int result = demoObject.addNum(100, 2);
-		 System.out.println("testAddNum_WithSuccess");
+		 System.out.println("Running testAddNum_WithSuccess");
 		 assertEquals(result,102);
 	 }
 	 
@@ -64,21 +64,21 @@ public class DemoApplicationTests {
 	  public void testAddNum_WithFailure() {
 
 		 int result = demoObject.addNum(100, 5);
-		 System.out.println("testAddNum_WithFailure");
+		 System.out.println("Running testAddNum_WithFailure");
 		 assertNotEquals(result,102);
 	 }
 	 
 	  @Test
 	   public void tesDivideNumber_WithSuccess()
 	   {
-		   System.out.println("tesDivideNumber_WithSuccess");
+		   System.out.println("Running tesDivideNumber_WithSuccess");
 		   assertEquals(2,demoObject.divideNum(4, 2)); 
 	   }
 	 
 	  @Test
 	   public void tesDivideNumber_WithFailure()
 	   {
-		   System.out.println("tesDivideNumber_WithFailure");
+		   System.out.println("Running tesDivideNumber_WithFailure");
 		   assertNotEquals(8,demoObject.divideNum(4, 2)); 
 	   }
 	  
