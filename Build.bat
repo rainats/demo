@@ -1,3 +1,3 @@
 echo "Building the Project : %date% : %time%"
-mvn install
+mvn clean package
 echo "Building the Project : Done %date% : %time%"
