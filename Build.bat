@@ -1,5 +1,5 @@
 echo "Building the Project : %date% : %time%"
-mvn install:install
-mvn compiler:compile com.example.demo
-mvn jar:jar
+mvn install
+mvn compile com.example.demo
+mvn package
 echo "Building the Project : Done %date% : %time%"
