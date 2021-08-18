@@ -1,3 +1,3 @@
 echo "Running Unit Test Cases : %date% : %time%"
-mvn test
+mvn surefire:test
 echo "Ending Unit Test Cases %date% : %time%"
